@@ -95,4 +95,5 @@ nav>ul>li>a:hover {
     font-weight: 250;
     display: flex;
     justify-content: center;
+    line-height: 20px;
 }
