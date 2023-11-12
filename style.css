@@ -11,8 +11,6 @@ body {
     background-image: url(image/background_porto.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-    width: auto;
-    height: 1000px;
 }
 
 nav {
@@ -65,16 +63,12 @@ nav>ul>li>a {
     background-size: 0 2px;
     background-position: 0 100%;
     background-repeat: no-repeat;
-    -webkit-transform: rotate(30deg);
-        transform: rotate(30deg);
     transition: 350ms;
 }
 
 nav>ul>li>a:hover {
     background-size: 100% 2px;
     color: black;
-    -webkit-transform: rotate(0);
-        transform: rotate(0);
     transition: 550ms;
 }
 
@@ -103,7 +97,6 @@ nav>ul>li>a:hover {
 }
 
 .first_line {
-    /* background-color: rgba(11, 209, 209, 0.648); */
     color: rgb(18, 18, 18);
     margin: auto;
     text-align: center;
