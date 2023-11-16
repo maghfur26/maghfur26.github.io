@@ -1,48 +1,12 @@
-*, html {
+*,html {
     margin: 0;
     padding: 0;
 }
 
-:root {
-    font-size: 12px;
-}
-
-body {
-    background-image: url(image/background_porto.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-
-nav {
-    background-color: rgb(5, 216, 216);
-    height: 10vh;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    font-family: 'Open Sans', sans-serif;
-}
-
-nav ul {
-    overflow: hidden;
-    margin: 0;
-    padding: 0;
-    list-style: none;
-}
-
-nav>ul>li {
-    float: left;
-}
-
-nav>ul>li>a {
+#navbarNav>ul>li>a {
     display: inline-block;
     text-decoration: none;
-    color: rgb(234, 234, 231);
+    color: rgb(105, 198, 244);
     padding: 10px 16px;
     font-size: 12px;
     font-size: 1rem;
@@ -50,15 +14,15 @@ nav>ul>li>a {
     -webkit-linear-gradient(
         left,
         rgba(255, 0, 0, 1),
-        rgba(255, 0, 180, 1),
-        rgba(72, 0, 255, 1)
+        rgb(217, 255, 0),
+        rgb(9, 255, 0)
     );
     background: 
     linear-gradient(
         to right,
         rgba(255, 0, 0, 1),
-        rgba(255, 0, 180, 1),
-        rgba(72, 0, 255, 1)
+        rgb(238, 255, 0),
+        rgb(81, 255, 0)
     );
     background-size: 0 2px;
     background-position: 0 100%;
@@ -66,46 +30,17 @@ nav>ul>li>a {
     transition: 350ms;
 }
 
-nav>ul>li>a:hover {
+#navbarNav>ul>li>a:hover {
     background-size: 100% 2px;
-    color: black;
+    color: white;
     transition: 550ms;
 }
 
-.image {
-    border: 3px solid black;
-    background-color: black;
-    height: 150px;
-    width: 150px;
-    display: block;
-    margin: auto;
-    margin-top: 59px;
-    border-radius: 75px;
-    background-image: url(image/me.jpg);
-    background-size: cover;
+.jumbotron {
+    padding-top: 2rem;
+    background-color: rgba(1, 1, 1, 0.89)
 }
 
-.header {
-    text-shadow: 2px 3px 4px rgb(68, 68, 68);
-    color: rgb(4, 120, 208);
-    font-size: 15.6px;
-    font-size: 2rem;
-    margin-top: 25px;
-    text-align: center;
-    font-weight: 700;
-    font-family: 'Libre Baskerville', serif;
-}
-
-.first_line {
-    color: rgb(18, 18, 18);
-    margin: auto;
-    text-align: center;
-    width: 50%;
-    margin-top: 10px;
-    font-family: 'Libre Baskerville', serif;
-    font-weight: 700;
-    font-size: 14.399px;
-    font-size: 1.2rem;
-    font-weight: 250;
-    line-height: 20px;
+.rounded-circle {
+    border: 3px solid rgba(248, 248, 248, 0.749);
 }
