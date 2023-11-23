@@ -41,6 +41,10 @@
     background-color: rgba(1, 1, 1, 0.89)
 }
 
+#contact {
+    background-color: #000b76;
+}
+
 .rounded-circle {
     border: 3px solid rgba(248, 248, 248, 0.749);
 }
@@ -53,12 +57,22 @@
     margin: 10px;
     width: 20vw;
     height: 15vh;
+    transform: skewx(0);
+    transition: 0.3s ease;
 }
 
-.card-body>p {
+.card:hover {
+    transform: skewX(deg);
+}
+
+.card-body > p {
     font-size: 12px;
 }
 
 .footer p {
     font-size: 1rem;
+}
+
+svg {
+    background-color: transparent;
 }
