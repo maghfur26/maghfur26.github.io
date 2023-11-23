@@ -44,3 +44,17 @@
 .rounded-circle {
     border: 3px solid rgba(248, 248, 248, 0.749);
 }
+
+.row p {
+    font-size: 1.5vmax;
+}
+
+.card {
+    margin: 10px;
+    width: 15vw;
+    height: 15vh;
+}
+
+.footer p {
+    font-size: 1rem;
+}
