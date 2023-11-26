@@ -9,6 +9,7 @@
     color: rgb(105, 198, 244);
     padding: 10px 16px;
     font-size: 12px;
+    font-size: 16px;
     font-size: 1rem;
     background: 
     -webkit-linear-gradient(
@@ -16,6 +17,13 @@
         rgba(255, 0, 0, 1),
         rgb(217, 255, 0),
         rgb(9, 255, 0)
+    );
+    background: 
+    -webkit-linear-gradient(
+        left,
+        rgba(255, 0, 0, 1),
+        rgb(238, 255, 0),
+        rgb(81, 255, 0)
     );
     background: 
     linear-gradient(
@@ -27,16 +35,19 @@
     background-size: 0 2px;
     background-position: 0 100%;
     background-repeat: no-repeat;
+    -webkit-transition: 350ms;
     transition: 350ms;
 }
 
 #navbarNav>ul>li>a:hover {
     background-size: 100% 2px;
     color: white;
+    -webkit-transition: 550ms;
     transition: 550ms;
 }
 
 .jumbotron {
+    padding-top: 40px;
     padding-top: 2.5rem;
     background-color: rgba(1, 1, 1, 0.89)
 }
@@ -75,6 +86,12 @@ a .insta {
     font-size: 1.5vw;
 }
 
+.sosmed,.insta {
+    margin-left: 10px;
+    align-items: baseline;
+}
+
 .footer p {
+    font-size: 16px;
     font-size: 1rem;
 }
