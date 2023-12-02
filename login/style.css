@@ -1,0 +1,144 @@
+*,html {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'poppins';
+}
+
+:root {
+    --primery-color: #c6c3c3d2;
+    --second-color: #fff;
+    --black-color: #000;
+}
+
+body {
+    background-image: url(bg\ \(2\).jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+a {
+    text-decoration: none;
+    color: var(--second-color);
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: rgba(0, 0, 0, 0.121);
+}
+
+.login-box {
+    position: relative;
+    width: 450px;
+    backdrop-filter: blur(15px);
+    border: 2px solid var(--primery-color);
+    border-radius: 15px;
+    padding: 7.5em 2.5em 4em 2.5em;
+    color: var(--second-color);
+}
+
+.login-header {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--primery-color);
+    width: 140px;
+    height: 70px;
+    border-radius: 0 0 20px 20px;
+}
+
+.login-header span {
+    font-size: 30px;
+    color: var(--black-color);
+}
+
+.input-field:focus ~ label, .input-field:valid label {
+    position: absolute;
+    top: -10px;
+    left: 20px;
+    font-size: 14px;
+    border-radius: 30px;
+    color: var(--black-color);
+    padding: 0 10px;
+}
+
+.remember-forget {
+    display: flex;
+    justify-content: space-between;
+    font-size: 15px;
+    margin: 10px 0;
+}
+
+.input_box {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin: 20px 0
+}
+
+.input-field {
+    width: 100%;
+    height: 4vh;
+    font-size: 16px;
+    background: transparent;
+    color: var(--second-color);
+    padding-inline: 20px 50px;
+    border-radius: 30px;
+    outline: none;
+    border: 2px solid var(--primery-color);
+}
+
+#user {
+    margin-bottom: 10px;
+}
+
+.label {
+    color: var(--second-color);
+}
+
+.input-submit {
+    width: 100%;
+    height: 30px;
+    background: #ececec;
+    font-size: 16px;
+    font-weight: 500;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.input-submit:hover {
+    background: var(--second-color);
+}
+
+.register {
+    text-align: center;
+}
+
+.register a {
+    font-weight: 500;
+}
+
+@media only screen and (max-width: 575px) {
+    .wrapper {
+        padding: 20px;
+    }
+
+    .login-box {
+        padding: 7.5em 1.5em 4em 1.5em;
+    }
+}

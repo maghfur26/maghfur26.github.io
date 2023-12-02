@@ -39,6 +39,10 @@
     transition: 350ms;
 }
 
+.navbar a {
+    text-decoration: none;
+}
+
 #navbarNav>ul>li>a:hover {
     background-size: 100% 2px;
     color: white;
