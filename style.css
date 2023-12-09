@@ -3,7 +3,7 @@
     padding: 0;
 }
 
-#navbarNav>ul>li>a {
+#navbarNav ul li a {
     display: inline-block;
     text-decoration: none;
     color: rgb(105, 198, 244);
@@ -76,6 +76,10 @@
     height: 15vh;
 }
 
+.card a {
+    text-decoration: none;
+}
+
 .card-body > p {
     font-size: 1.5vw;
 }
@@ -100,3 +104,4 @@ a .insta {
     font-size: 16px;
     font-size: 1rem;
 }
+
