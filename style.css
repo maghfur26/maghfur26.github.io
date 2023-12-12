@@ -110,7 +110,7 @@
     grid-area: span;
     text-transform: uppercase;
     position: relative;
-    color: orange;
+    color: rgb(4, 0, 255);
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-weight: 600;
 }
