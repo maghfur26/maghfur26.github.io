@@ -84,11 +84,11 @@
 }
 
 .my-job {
+    overflow: hidden;
     margin-bottom: 60px;
-    font-size: 5vm;
     font-size: 5vmin;
     grid-area: job;
-    width: 80vw;
+    width: 200px;
     display: -ms-grid;
     display: grid;
     grid-template-areas: 
@@ -122,17 +122,17 @@
     
 }
 
-.sec-text:before{
+.sec-text::before{
     content: "";
     position: absolute;
     top: 0;
     left: 0;
     height: 100%;
-    width: 104%;
+    width: 100%;
     background-color: rgb(0, 0, 0);
     border-left: 2px solid #fcfcfc;
-    -webkit-animation: animate 4s steps(16) infinite;
-            animation: animate 4s steps(16) infinite;
+    -webkit-animation: animate 5s steps(16) infinite;
+            animation: animate 5s steps(16) infinite;
 }
 
 #contact {
@@ -200,15 +200,15 @@ a .insta {
 
 @keyframes animate{
     40%, 60%{
-        left: calc(100% + 3px);
+        left: calc(100% + 4px);
     }
     100%{
         left: 0%;
     }
 }
 
-@media (max-width: 575px) {
+@media (max-width: 600px) {
     .my-job {
-        font-size: 2.8vmin;
+        font-size: 1em;
     }
 }
