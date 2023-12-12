@@ -10,6 +10,7 @@
     padding: 10px 16px;
     font-size: 12px;
     font-size: 16px;
+    font-size: 16px;
     font-size: 1rem;
     background: 
     -webkit-linear-gradient(
@@ -53,16 +54,22 @@
 .jumbotron {
     padding-top: 50px;
     position: relative;
+    display: -ms-grid;
     display: grid;
-    grid-template-columns: 200px 1fr;
-    grid-template-rows: 250px 200px;
+    -ms-grid-columns: 200px 1fr;
+        grid-template-columns: 200px 1fr;
+    -ms-grid-rows: 250px 200px;
+        grid-template-rows: 250px 200px;
     grid-template-areas: 
                         "foto job"
                         "wave wave";
-    justify-content: start;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
     background-color: rgb(1, 1, 1);
     box-sizing: border-box;
-    align-items: end;
+    -ms-grid-row-align: end;
+        align-items: end;
 }
 
 .jumbotron > img{
@@ -72,19 +79,24 @@
 
 .wave {
     grid-area: wave;
-    grid-column: 100%;
+    -ms-grid-column: 100%;
+        grid-column: 100%;
 }
 
 .my-job {
     margin-bottom: 60px;
+    font-size: 5vm;
     font-size: 5vmin;
     grid-area: job;
     width: 80vw;
+    display: -ms-grid;
     display: grid;
     grid-template-areas: 
                         "hello hello"
                         "span span";
-    justify-content: start;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
 }
 
 .my-job > h1 {
@@ -119,7 +131,8 @@
     width: 104%;
     background-color: rgb(0, 0, 0);
     border-left: 2px solid #fcfcfc;
-    animation: animate 4s steps(18) infinite;
+    -webkit-animation: animate 4s steps(16) infinite;
+            animation: animate 4s steps(16) infinite;
 }
 
 #contact {
@@ -162,12 +175,26 @@ a .insta {
 
 .sosmed,.insta {
     margin-left: 10px;
-    align-items: baseline;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+                -ms-grid-row-align: baseline;
+            align-items: baseline;
 }
 
 .footer p {
     font-size: 16px;
+    font-size: 16px;
     font-size: 1rem;
+}
+
+
+@-webkit-keyframes animate{
+    40%, 60%{
+        left: calc(100% + 3px);
+    }
+    100%{
+        left: 0%;
+    }
 }
 
 
