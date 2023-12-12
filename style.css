@@ -51,10 +51,75 @@
 }
 
 .jumbotron {
-    padding-top: 40px;
-    padding-top: 2.5rem;
-    background-color: rgba(1, 1, 1, 0.89);
+    padding-top: 50px;
+    position: relative;
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    grid-template-rows: 250px 200px;
+    grid-template-areas: 
+                        "foto job"
+                        "wave wave";
+    justify-content: start;
+    background-color: rgb(1, 1, 1);
     box-sizing: border-box;
+    align-items: end;
+}
+
+.jumbotron > img{
+    grid-area: foto;
+    margin-left: 20px;
+}
+
+.wave {
+    grid-area: wave;
+    grid-column: 100%;
+}
+
+.my-job {
+    margin-bottom: 60px;
+    font-size: 5vmin;
+    grid-area: job;
+    width: 80vw;
+    display: grid;
+    grid-template-areas: 
+                        "hello hello"
+                        "span span";
+    justify-content: start;
+}
+
+.my-job > h1 {
+    grid-area: hello;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: white!important;
+}
+
+.my-job .text {
+    margin-left: 10px;
+    grid-area: span;
+    text-transform: uppercase;
+    position: relative;
+    color: orange;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 600;
+}
+
+.first-text {
+    margin-left: 40px!important;
+    grid-area: span;
+    color: white!important;
+    
+}
+
+.sec-text:before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 104%;
+    background-color: rgb(0, 0, 0);
+    border-left: 2px solid #fcfcfc;
+    animation: animate 4s steps(18) infinite;
 }
 
 #contact {
@@ -105,3 +170,18 @@ a .insta {
     font-size: 1rem;
 }
 
+
+@keyframes animate{
+    40%, 60%{
+        left: calc(100% + 3px);
+    }
+    100%{
+        left: 0%;
+    }
+}
+
+@media (max-width: 575px) {
+    .my-job {
+        font-size: 2.8vmin;
+    }
+}
